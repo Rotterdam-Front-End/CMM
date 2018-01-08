@@ -1,0 +1,55 @@
+html{ font-size: 100%; text-align:center;}
+		
+.js-enabled{ display: none; }
+.js-disabled{ display: block; }
+
+#timer{
+	width: 300px;
+	padding: 0;
+	border: 1px solid #DEDEDE;
+	margin: 1rem auto 1rem auto;
+	font-size: 3.5rem;
+	font-family: "Courier New", monospace;
+	text-align:center;
+}
+
+#btnStart, #btnStop, #btnReset{
+	display: inline-block;
+	padding: 0.5em 1em;
+	font-size: 0.8rem;
+	font-family: sans-serif;
+	border-radius: 0.2em;
+	margin: 0 1rem;
+	cursor: pointer;
+	
+}
+
+#btnStart{ 
+	background-color: rgba(0,255,0,0.3);
+	border: 1px solid rgba(0,255,0,0.9);
+}
+
+#btnStart:hover{
+	background-color: rgba(0,255,0,0.5);
+	border: 1px solid rgba(0,255,0,1);
+}
+
+#btnStop{ 
+	background-color: rgba(255,0,0,0.3);
+	border: 1px solid red;
+}	
+
+#btnStop:hover{
+	background-color: rgba(255,0,0,0.5);
+	border: 1px solid rgba(255,0,0,1);
+}
+
+#btnReset{ 
+	background-color: rgba(255,128,0,0.3);
+	border: 1px solid red;
+}	
+
+#btnReset:hover{
+	background-color: rgba(255,128,0,0.5);
+	border: 1px solid rgba(255,128,0,1);
+}

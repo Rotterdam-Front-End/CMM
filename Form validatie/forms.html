@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Formulieren</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="css/form-styles.css" rel="stylesheet">
+</head>
+<body>
+	<form id="cmmContactForm" novalidate action="includes/process-form.php" method="post">
+		<fieldset>
+			<legend>Persoonsgegevens</legend>
+			<div>
+				<label for="naam">Naam:</label>
+				<input type="text" name="naam" id="naam" value="" placeholder="voor- en achternaam">
+			</div>
+			<div>
+				<label for="email">E-mail:</label>
+				<input type="email" name="email" id="email" value="" placeholder="uw@email.adres.com">
+			</div>
+			<div>
+				<label for="leeftijd">Leeftijd:</label>
+				<input type="number" name="leeftijd" id="leeftijd" value="0" min="18" max="99">
+			</div>
+			<div id="geslacht">
+				<label>Geslacht:</label>
+				<input type="radio" name="geslacht" id="geslachtM" value="man" > Man
+				<input type="radio" name="geslacht" id="geslachtV" value="vrouw" > Vrouw
+				<input type="radio" name="geslacht" id="geslachtA" value="anders" > Anders
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Werken bij CMM</legend>
+			<div>
+				<label>Welke dagen wilt u werken?</label>
+				<input type="checkbox" name="werkenMa" id="werkenMa" value="maandag" > Maandag
+				<input type="checkbox" name="werkenDi" id="werkenDi" value="dinsdag" > Dinsdag
+				<input type="checkbox" name="werkenWo" id="werkenWo" value="woensdag" > Woensdag
+				<input type="checkbox" name="werkenDo" id="werkenDo" value="donderdag" > Donderdag
+				<input type="checkbox" name="werkenVr" id="werkenVr" value="vrijdag" > Vrijdag
+				<input type="checkbox" name="werkenZa" id="werkenZa" value="zaterdag" > Zaterdag
+			</div>
+			<div>
+				<label for="favorietWerk">Favoriete werk</label>
+				<select>
+					<option value="-1">-- Maak een keuze</option>
+					<optgroup label="Administratie">
+						<option>Office Manager</option>
+						<option>Office Manager (stage)</option>
+					</optgroup>
+					<optgroup label="Adviseurs">
+						<option>Sales medewerker</option>
+						<option>Marketing</option>
+					</optgroup>
+					
+					<optgroup label="Docenten">
+						<option>Web Design docent</option>
+						<option>Front-End Developer docent</option>
+						<option>Adobe Certified Instructor</option>
+					</optgroup>
+					
+					<optgroup label="Management">
+						<option>CFO</option>
+						<option>COO</option>
+					</optgroup>
+				</select>
+			</div>
+			<div>
+				<label for="submit">Insturen:</label>
+				<input type="submit" name="submit" id="submit" value="Mail CMM">
+			</div>
+		</fieldset>
+	</form>
+	<script src="js/validate-form.js"></script>
+</body>
+</html>
