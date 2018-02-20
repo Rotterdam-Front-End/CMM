@@ -1,0 +1,175 @@
+html {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background-image: linear-gradient(260deg, #267272 0%, #3FBFBF 100%);
+  }
+li >  a {
+    color: #fff;
+    font-weight: 100;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 0px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+li >  a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .flex-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  /* Flex Nav */
+  
+  .logo h1 {
+    margin: 0;
+    justify-content: center;
+  }
+  .flex-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .flex-nav li {
+    flex: 1;
+  }
+  /* Fex Hero */
+  .hero a:nth-child(1) {
+    text-decoration: none;
+    color: #fff;
+  }
+  .hero a:nth-child(2) {
+    text-decoration: none;
+  }
+  .hero a:nth-child(3):hover {
+    opacity: 0.5;
+  }
+  .hero a:nth-child(1):hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .box:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .hero {
+    display: flex;
+    margin: 25px 0;
+    justify-content: space-around;
+  }
+  .hero img {
+    width: 500px;
+    height: 340px;
+    border: 5px solid #fff;
+  }
+  .box {
+    margin-top: 40px;
+  }
+  .hero-text {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 190px;
+    padding: 10px;
+    border: 5px solid #fff;
+    color: #fff;
+  }
+  /* Fun Fact */
+  
+  .toggleContent {
+    width: 260px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+  }
+  .toggleContent h2 {
+    text-transform: uppercase;
+    color: #fff;
+  }
+  /* Geschiedenis Page */
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  .accordion {
+    color: #fff;
+    height: 300px;
+    width: 33.333%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: opacity .50s ease-in-out;
+    border: 2px solid #fff;
+    padding: 18px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 25px;
+  }
+  /* Footer */
+  
+  footer {
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .copyright p {
+    padding-left: 15px;
+    color: #fff;
+  }
+  .flex-footer {
+    display: flex;
+    align-content: center;
+  }
+  /* Onderdelen */
+  
+  #content {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .computer {
+    width: 250px;
+    align-items: baseline;
+  }
+  @media all and (max-width:1024px) {
+    .flex-nav ul {
+      flex-wrap: wrap;
+    }
+    .flex-nav li {
+      flex: 1 1 25%;
+    }
+    .hero {
+      flex-wrap: wrap;
+    }
+    .hero img {
+      width: 100%;
+    }
+    .toggleContent {
+      margin-bottom: 25px;
+    }
+    .hero img {
+      width: 99%;
+      height: 100%;
+    }
+  }
+  @media all and (max-width:500px) {
+    .flex-nav li {
+      flex-basis: 100%;
+    }
+    footer {
+      justify-content: center;
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+    }
+  }

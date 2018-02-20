@@ -1,0 +1,37 @@
+{
+  "computer" : [
+      {
+      "title": "Processor",
+      "image": "img/processor.jpg",
+      "info": "Een processor van Intel. Hij zit al vastgeklikt aan het moederbord"
+    }, {
+      "title": "Moederbord",
+      "image": "img/moederbord.jpg",
+      "info": "Een moederbord. Het witte vierkant linksonder is het socket voor de CPU, De witte gleuven rechtsboven zijn PCI-sloten voor de videokaart."
+    }, {
+      "title": "Ram geheugen",
+      "image": "img/ram.jpg",
+      "info": "Twee RAM-geheugensticks ook wel modules genoemd"
+    }, {
+      "title": "Processor",
+      "image": "img/videokaart.jpg",
+      "info": "Een (redelijk nieuwe) videokaart van ATI. Linksvoor de aansluitingen voor een beeldscherm. Het zwarte ronde deel is de (actieve) koeling, in de vorm van een kleine ventilator"
+    }, {
+      "title": "Harde schijf",
+      "image": "img/hardeschijf.jpg",
+      "info": "Een harde schijf"
+    }, {
+      "title": "Dvd speler",
+      "image": "img/dvdspeler.jpg",
+      "info": "Een DVD-speler van het merk LG."
+    }, {
+      "title": "Voeding",
+      "image": "img/voeding.jpg",
+      "info": " De voorkant van een voeding. Te zien zijn: De aan/uit-schakelaar, de aansluiting voor de kabel naar het stopcontact en de ventilator om de voeding te koelen."
+    }, {
+      "title": "Koeling",
+      "image": "img/koeling.png",
+      "info": "Een voorbeeld van de perfecte airflow. Er wordt gebruik gemaakt van fans voor, achter en aan de bovenkant. Soms zit er ook nog een fan aan de onderkant."
+    }
+  ]
+}
